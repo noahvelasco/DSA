@@ -1,8 +1,6 @@
 //Given an array with values ranging from 1-n+1 with size n, find missing num
 function findMissingNumber(arr) {
-  arr = arr.sort(function (a, b) {
-    return a - b;
-  });
+  arr = arr.sort((a, b) => a - b);
   console.log(arr);
 
   for (let i = 1; i < arr.length; i++) {
